@@ -4,15 +4,24 @@
 This project is built using [Jekyll](https://jekyllrb.com) and [SCSS](https://sass-lang.com/).
 
 ## Build Instructions
-First install a full Ruby development environment, then install Jekyll and bundler gems:
+First install a full Ruby development environment. Make sure that your Ruby version is greater
+than or equal to 2.4 since this is required for Bundle to be installed. You may check your Ruby
+version using the command `ruby -v`.
+Now you may install Jekyll and bundler gems:
 ```sh
 $ gem install jekyll bundler
 ```
-Before serving the site locally, check that you have added the Ruby binary directory to your
-path. Now you may serve the website locally using the command:
+Once you have installed this without errors, you need to install the required `gems` for the
+project:
+```sh
+$ bundle install
+```
+Now we may serve the site locally:
 ```sh
 $ bundle exec jekyll serve
 ```
+Note that the site will update as you make changes.
+You may push your changes to Github, and the site will automatically update.
 
 ## Post Instructions
 To add a new blog post or article, create a new markdown file and name it with the format:

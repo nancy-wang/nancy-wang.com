@@ -23,6 +23,21 @@ $ bundle exec jekyll serve
 Note that the site will update as you make changes.
 You may push your changes to Github, and the site will automatically update.
 
+## Site Configurations
+All site configurations are in `_config.yml`.
+```yml
+# Global Configurations
+
+# Name of Website
+title: Nancy Wang (汪岚)
+
+# Name of Owner
+name: Nancy Wang
+
+# Other configurations
+animate-text: false # When set to true, the landing page willl use typed.js
+```
+
 ## Post Instructions
 To add a new blog post or article, create a new markdown file and name it with the format:
 `YEAR-MONTH-DAT-title.MARKUP`. For example: `2018-12-18-new-chapter-of-my-life.md`. Put this file

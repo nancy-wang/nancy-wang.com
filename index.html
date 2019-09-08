@@ -7,9 +7,20 @@ title: Home
     <div class="fixed-background-filter"></div>
     <div class="main-section">
         <div class="welcome-text">
-            <h1>{{ site.name | upcase }}</h1>
-            <p>{{ "Student | Product Manager | Software Engineer |
-                Environmentalist" | upcase }}</p>
+            <div class="welcome-text-inner">
+                <h1>{{ site.name | upcase }}</h1>
+
+                {% if site.animate-text %}
+                <p id="welcome-text-animated">
+                    I am a<span class="element"></span>
+                </p>
+                {% else %}
+                <p id="welcome-text-static">
+                    {{ "Student | Product Manager |
+                    Environmentalist" | upcase }}
+                </p>
+                {% endif %}
+            </div>
         </div>
     </div>
 </div>

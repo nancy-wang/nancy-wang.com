@@ -1,4 +1,5 @@
 .landing-page {
+    font-family: $font-family-base;
     .fixed-background {
         background-image: $background-image-mobile;
         background-size: cover;
@@ -27,10 +28,20 @@
         display: table-cell;
         vertical-align: middle;
         color: $landing-text-color;
-        text-align: center;
-        h1 {
-            font-size: $header-font-size-mobile;
-            font-weight: 300;
+        .welcome-text-inner {
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 30px;
+            h1 {
+                font-family: $font-family-base;
+                font-size: $header-font-size-mobile;
+                font-weight: 300;
+            }
+            p {
+                font-family: $font-family-base;
+                font-size: $paragraph-font-size-mobile;
+            }
         }
     }
 }
@@ -38,9 +49,16 @@
 // Font-size changes TODO: move to base.scss for general responsive font-size
 @media (min-width: 800px) {
     .landing-page {
-        .welcome-text {
-            h1 {
-                font-size: $header-font-size-desktop;
+        .main-section {
+            .welcome-text {
+                .welcome-text-inner {
+                    h1 {
+                        font-size: $header-font-size-desktop;
+                    }
+                    p {
+                        font-size: $paragraph-font-size-desktop;
+                    }
+                }
             }
         }
     }

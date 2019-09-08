@@ -1,0 +1,25 @@
+/*
+ * base.scss
+ * This is the base scss file that contains all the variables and defaults.
+ */
+
+// Imports
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+// Variables
+$font-family-base: 'Roboto', sans-serif;
+$background-filter: rgba(36, 19, 0, 0.658);
+$landing-text-color: #f0f0f0;
+
+$background-image-desktop: url("../images/home1.jpg");
+$background-image-mobile: url("../images/home.jpg");
+$background-z-index: -100;
+$background-filter-z-index: -99;
+
+$header-font-size-desktop: 54px;
+$header-font-size-mobile: 36px;
+
+// Defaults
+* {
+    font-family: $font-family-base;
+}

@@ -1,8 +1,15 @@
 ---
 layout: default
-title: Nancy's Website
+title: Home
 ---
-<div class="landing-page container">
-    <h1>Welcome to Nancy Wang's Website!</h1>
-    <p>{{ "Hello World!" | upcase }}</p>
+<div class="landing-page">
+    <div class="fixed-background"></div>
+    <div class="fixed-background-filter"></div>
+    <div class="main-section">
+        <div class="welcome-text">
+            <h1>{{ site.name | upcase }}</h1>
+            <p>{{ "Student | Product Manager | Software Engineer |
+                Environmentalist" | upcase }}</p>
+        </div>
+    </div>
 </div>

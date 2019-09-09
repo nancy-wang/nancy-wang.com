@@ -37,6 +37,9 @@ name: Nancy Wang
 # Other configurations
 animate-text: false # When set to true, the landing page willl use typed.js
 ```
+## Icons
+For icons, please look at documentation for [Ionicons](https://ionicons.com/).
+
 
 ## Post Instructions
 To add a new blog post or article, create a new markdown file and name it with the format:

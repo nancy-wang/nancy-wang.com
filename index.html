@@ -5,22 +5,41 @@ title: Home
 <div class="landing-page">
     <div class="fixed-background"></div>
     <div class="fixed-background-filter"></div>
+    {% include navigation-main.html %}
     <div class="main-section">
         <div class="welcome-text">
             <div class="welcome-text-inner">
-                <h1>{{ site.name | upcase }}</h1>
+                <div class="centered-box">
+                    <h1>{{ site.name | upcase }}</h1>
 
-                {% if site.animate-text %}
-                <p id="welcome-text-animated">
-                    I am a<span class="element"></span>
-                </p>
-                {% else %}
-                <p id="welcome-text-static">
-                    {{ "Student | Product Manager |
-                    Environmentalist" | upcase }}
-                </p>
-                {% endif %}
+                    {% if site.animate-text %}
+                    <p id="welcome-text-animated">
+                        I am a<span class="element"></span>
+                    </p>
+                    {% else %}
+                    <p id="welcome-text-static">
+                        {{"Student | Product Manager | Environmentalist" |
+                        upcase}}
+                    </p>
+                    {% endif %}
+                </div>
             </div>
+        </div>
+    </div>
+    <div class="social-media">
+        <div class="icon-set">
+            <a href="{{ site.github }}">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="{{ site.linkedin }}">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="{{ site.instagram }}">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+            <a href="mailto:{{ site.email }}">
+                <ion-icon name="mail"></ion-icon>
+            </a>
         </div>
     </div>
 </div>

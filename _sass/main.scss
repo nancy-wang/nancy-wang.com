@@ -25,22 +25,42 @@
         width: 100%;
     }
     .welcome-text {
-        display: table-cell;
-        vertical-align: middle;
+        display: table-row;
         color: $landing-text-color;
         .welcome-text-inner {
-            max-width: 600px;
+            display: table-cell;
+            vertical-align: middle;
+            .centered-box {
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 30px;
+                h1 {
+                    font-family: $font-family-base;
+                    font-size: $header-font-size-mobile;
+                    font-weight: 300;
+                }
+                p {
+                    font-family: $font-family-base;
+                    font-size: $paragraph-font-size-mobile;
+                }
+            }
+        }
+    }
+    .social-media {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        .icon-set {
+            max-width: 220px;
             margin-left: auto;
             margin-right: auto;
-            padding: 30px;
-            h1 {
-                font-family: $font-family-base;
-                font-size: $header-font-size-mobile;
-                font-weight: 300;
-            }
-            p {
-                font-family: $font-family-base;
-                font-size: $paragraph-font-size-mobile;
+            ion-icon {
+                font-size: 30px;
+                color: $landing-text-color;
+                margin-left: 10px;
+                margin-right: 10px;
             }
         }
     }

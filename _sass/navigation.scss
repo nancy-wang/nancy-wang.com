@@ -1,5 +1,6 @@
 .navigation-bar {
     position: fixed;
+    width: 100%;
     top: 0;
     left: 0;
     z-index: $navbar-z-index;
@@ -18,8 +19,15 @@
         text-decoration: none;
         color: white;
     }
+    a.navigation-link {
+        float: right;
+    }
+    a.logo {
+        color: $landing-text-color;
+    }
     button.menu {
         display: none;
+        float: right;
         font-size: 30px;
         color: darken($landing-text-color, 10%);
         border: none;
@@ -64,7 +72,7 @@
         button.menu {
             display: block;
         }
-        a {
+        a.navigation-link {
             display: none;
         }
     }

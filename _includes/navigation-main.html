@@ -1,7 +1,21 @@
 <nav class="navigation-bar">
+    <button class="menu" id="nav-button">
+        <ion-icon name="menu"></ion-icon>
+    </button>
     {% for item in site.data.navigation %}
     <a href="{{ item.link | relative_url }}">
         {{ item.name }}
     </a>
     {% endfor %}
 </nav>
+<div id="mobile-nav">
+    <div class="link-wrapper">
+        <div class="centered-links">
+            {% for item in site.data.navigation %}
+            <a href="{{ item.link | relative_url }}">
+                {{ item.name }}
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

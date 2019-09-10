@@ -2,10 +2,11 @@
     position: fixed;
     top: 0;
     left: 0;
+    z-index: $navbar-z-index;
     a {
         display: inline-block;
         text-decoration: none;
-        color: darken( $landing-text-color, 10%);
+        color: darken($landing-text-color, 10%);
         font-family: $font-family-base;
         font-weight: 500;
         font-size: $navbar-font-size;
@@ -16,5 +17,55 @@
         transition-duration: 0.2s;
         text-decoration: none;
         color: white;
+    }
+    button.menu {
+        display: none;
+        font-size: 30px;
+        color: darken($landing-text-color, 10%);
+        border: none;
+        background: transparent;
+        padding: 10px;
+    }
+    button.menu:hover {
+        transition-duration: 0.2s;
+        color: white;
+    }
+}
+
+#mobile-nav {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: $nav-background;
+    z-index: $nav-menu-z-index;
+    .link-wrapper {
+        height: 100%;
+        width: 100%;
+        display: table;
+        .centered-links {
+            display: table-cell;
+            vertical-align: middle;
+            a {
+                display: block;
+                width: 100%;
+                text-decoration: none;
+                text-align: center;
+                color: $landing-text-color;
+                font-size: $navbar-font-size;
+                padding: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .navigation-bar {
+        button.menu {
+            display: block;
+        }
+        a {
+            display: none;
+        }
     }
 }

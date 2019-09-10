@@ -9,12 +9,15 @@
 // Variables
 $font-family-base: 'Roboto', sans-serif;
 $background-filter: rgba(36, 19, 0, 0.658);
+$nav-background: rgba(0, 0, 0, 0.8);
 $landing-text-color: #f0f0f0;
 
 $background-image-desktop: url("../images/home1.jpg");
 $background-image-mobile: url("../images/home.jpg");
 $background-z-index: -100;
 $background-filter-z-index: -99;
+$navbar-z-index: 100;
+$nav-menu-z-index: 99;
 
 $header-font-size-desktop: 54px;
 $header-font-size-mobile: 36px;

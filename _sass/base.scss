@@ -7,24 +7,36 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 // Variables
+
+// Fonts
 $font-family-base: 'Roboto', sans-serif;
+
+// Colours
 $background-filter: rgba(36, 19, 0, 0.658);
 $nav-background: rgba(0, 0, 0, 0.85);
 $landing-text-color: #f0f0f0;
 
+// Image Urls
 $background-image-desktop: url("../images/home1.jpg");
 $background-image-mobile: url("../images/home.jpg");
+$about-header-image: url("../images/about.jpg");
+
+// Z-indices
 $background-z-index: -100;
 $background-filter-z-index: -99;
 $navbar-z-index: 100;
 $nav-menu-z-index: 99;
 
+// Font Sizes
 $header-font-size-desktop: 54px;
 $header-font-size-mobile: 36px;
 $paragraph-font-size-desktop: 20px;
 $paragraph-font-size-mobile: 16px;
 $navbar-font-size: 20px;
 $mobile-menu-font-size: 24px;
+
+// Heights
+$header-height: 35vh;
 
 // Defaults
 * {

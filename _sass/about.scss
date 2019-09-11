@@ -1,0 +1,76 @@
+.about-me {
+    .header-section {
+        height: $header-height;
+        background-image: $about-header-image;
+        background-position: center;
+        background-size: cover;
+        .header-background-filter {
+            height: 100%;
+            width: 100%;
+            background-color: $background-filter;
+            h1 {
+                line-height: $header-height;
+                font-family: $font-family-base;
+                font-size: $header-font-size-desktop;
+                font-family: $font-family-base;
+                font-weight: 300;
+                color: $landing-text-color;
+                text-align: center;
+                margin: 0;
+            }
+        }
+    }
+    .content-section {
+        background-color: $landing-text-color;
+        min-height: 100vh - $header-height;
+        .container {
+            padding: 30px;
+            p {
+                font-family: $font-family-base;
+                font-weight: 300;
+                font-size: $paragraph-font-size-desktop;
+                text-align: justify;
+                img {
+                    float: right;
+                    width: 300px;
+                    margin-left:30px;
+                    margin-right: 30px;
+                }
+                .desktop-image {
+                    display: block;
+                }
+                .mobile-image {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .about-me {
+        .header-section {
+            .header-background-filter {
+                h1 {
+                    font-size: $header-font-size-mobile;
+                }
+            }
+        }
+        .content-section {
+            .container {
+                p {
+                    img {
+                        width: 100%;
+                        margin: 0;
+                    }
+                    .desktop-image {
+                        display: none;
+                    }
+                    .mobile-image {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

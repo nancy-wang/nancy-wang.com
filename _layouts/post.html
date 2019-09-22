@@ -1,8 +1,15 @@
 ---
 layout: default
 ---
-<div class="post container">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
-    {{ content }}
+<div class="post-page">
+    <div class="header-section">
+        <div class="header-background-filter">
+            <h1>Blob</h1>
+        </div>
+    </div>
+    <div class="post container">
+        <h1>{{ page.title }}</h1>
+        <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
+        {{ content }}
+    </div>
 </div>

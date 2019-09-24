@@ -27,9 +27,11 @@
             padding: 30px;
             p {
                 font-family: $font-family-base;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: $paragraph-font-size-desktop;
+                line-height: $paragraph-font-size-desktop * 2;
                 text-align: justify;
+                margin-bottom: 25px;
             }
             h2 {
                 text-align: center;
@@ -49,6 +51,14 @@
             .header-background-filter {
                 h1 {
                     font-size: $header-font-size-mobile;
+                }
+            }
+        }
+        .post-section {
+            .container {
+                p {
+                    font-size: $paragraph-font-size-mobile;
+                    line-height: $paragraph-font-size-mobile * 2;
                 }
             }
         }

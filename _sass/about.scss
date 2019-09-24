@@ -27,8 +27,9 @@
             padding: 30px;
             p {
                 font-family: $font-family-base;
-                font-weight: 300;
+                font-weight: 400;
                 font-size: $paragraph-font-size-desktop;
+                line-height: $paragraph-font-size-desktop * 2;
                 text-align: justify;
                 img {
                     float: right;
@@ -59,6 +60,8 @@
         .content-section {
             .container {
                 p {
+                    font-size: $paragraph-font-size-mobile;
+                    line-height: $paragraph-font-size-mobile * 2;
                     img {
                         width: 100%;
                         margin: 0;

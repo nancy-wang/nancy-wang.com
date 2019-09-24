@@ -30,8 +30,9 @@
                 margin-bottom: 60px;
                 p {
                     font-family: $font-family-base;
-                    font-weight: 300;
+                    font-weight: 400;
                     font-size: $paragraph-font-size-desktop;
+                    line-height: $paragraph-font-size-desktop * 2;
                     text-align: justify;
                     color: $dark-text-color;
                     a {
@@ -41,6 +42,7 @@
                 }
                 h2 {
                     text-align: left;
+                    font-weight: 600;
                     a {
                         color: $dark-text-color;
                         text-decoration: none;
@@ -61,6 +63,16 @@
             .header-background-filter {
                 h1 {
                     font-size: $header-font-size-mobile;
+                }
+            }
+        }
+        .content-section {
+            .container {
+                .post {
+                    p {
+                        font-size: $paragraph-font-size-mobile;
+                        line-height: $paragraph-font-size-mobile * 2;
+                    }
                 }
             }
         }

@@ -11,9 +11,14 @@ title: Blob
     <div class="content-section">
         <div class="container">
             {% for post in site.posts %}
-            <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
-            <p>{{ post.excerpt }}</p>
-            {% endfor %}
+            <div class="post">
+                <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+                <p>{{ post.date | date: '%B %d, %Y' }}</p>
+                {{ post.excerpt }}
+                <p><a href="{{ post.url | relative_url }}">...</a></p>
+                <hr/>
+                </div>
+                {% endfor %}
+            </div>
         </div>
     </div>
-</div>

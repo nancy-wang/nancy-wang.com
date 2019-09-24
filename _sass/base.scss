@@ -15,6 +15,9 @@ $font-family-base: 'Open Sans', sans-serif;
 $background-filter: rgba(36, 19, 0, 0.658);
 $nav-background: rgba(0, 0, 0, 0.85);
 $landing-text-color: #f0f0f0;
+$dark-text-color: #3f3f3f;
+$blockquote-background-color: #dfdfdf;
+$blockquote-border-color: #bfbfbf;
 
 // Image Urls
 $background-image-desktop: url("../images/home1.jpg");
@@ -41,4 +44,7 @@ $header-height: 35vh;
 // Defaults
 * {
     font-family: $font-family-base;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    color: $dark-text-color;
 }

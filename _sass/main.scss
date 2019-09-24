@@ -26,7 +26,6 @@
     }
     .welcome-text {
         display: table-row;
-        color: $landing-text-color;
         .welcome-text-inner {
             display: table-cell;
             vertical-align: middle;
@@ -39,10 +38,12 @@
                     font-family: $font-family-base;
                     font-size: $header-font-size-mobile;
                     font-weight: 300;
+                    color: $landing-text-color;
                 }
                 p {
                     font-family: $font-family-base;
                     font-size: $paragraph-font-size-mobile;
+                    color: $landing-text-color;
                 }
             }
         }

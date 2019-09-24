@@ -20,7 +20,7 @@
             }
         }
     }
-    .content-section {
+    .post-section {
         background-color: $landing-text-color;
         min-height: 100vh - $header-height;
         .container {
@@ -33,6 +33,11 @@
             }
             h2 {
                 text-align: center;
+            }
+            blockquote {
+                background-color: $blockquote-background-color;
+                padding: 15px;
+                border-left: solid 5px $blockquote-border-color;
             }
         }
     }

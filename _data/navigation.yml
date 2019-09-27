@@ -1,6 +1,6 @@
 - name: Resume
   link: /assets/files/resume.pdf
-- name: Blob
+- name: Blog
   link: /blog.html
 - name: About
   link: /about.html

@@ -37,7 +37,7 @@
                 h1 {
                     font-family: $font-family-base;
                     font-size: $header-font-size-mobile;
-                    font-weight: 300;
+                    font-weight: $header-font-weight;
                     color: $landing-text-color;
                 }
                 p {

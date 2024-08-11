@@ -1,7 +1,9 @@
 - name: Resume
   link: /assets/files/resume.pdf
 - name: Blog
-  link: /blog.html
+  #link: /blog.html
+  link: https://the-writeous-nancy.medium.com
+  external: true
 - name: About
   link: /about.html
 - name: Home

@@ -15,7 +15,7 @@
     <div class="link-wrapper">
         <div class="centered-links">
             {% for item in site.data.navigation reversed%}
-            <a href="{{ item.link | relative_url }}">
+            <a href = "{% if item.external == true %}{{item.href}}{% else %}{{item.link | relative_url}}{% endif %}">
                 {{ item.name }}
             </a>
             {% endfor %}
